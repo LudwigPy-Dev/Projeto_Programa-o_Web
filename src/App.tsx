@@ -10,15 +10,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          {/* 1. Removemos o "/>" do final desta linha para ela não fechar sozinha */}
           <Route path="/" element={<Layout />}>
-            
-            {/* 2. Estas rotas agora mudaram para DENTRO do Layout */}
+
             <Route path="/" element={<Home />} />
             <Route path="Administrativo" element={<Page_Administrativo />} />
             <Route path="Criação" element={<Page_criacao />} />
             <Route path="servidores" element={<Page_Servidores />} />
-          </Route> {/* 3. Fechamos a rota do Layout aqui, depois das filhas */}
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
