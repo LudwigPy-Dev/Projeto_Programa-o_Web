@@ -4,7 +4,6 @@ import MainCard from "../components/mainCard"
 import FCard from "../components/footerCard"
 import Ajuda from "../components/cardAjuda"
 
-// Ícones selecionados para o cenário de desenvolvimento e criação gráfica
 import { FaMemory, FaCode, FaPaintBrush, FaTachometerAlt, FaServer, FaFan } from "react-icons/fa"
 import { FaComputer, FaGears } from "react-icons/fa6"
 import { LuCpu } from "react-icons/lu"
@@ -15,7 +14,6 @@ import { FaUpwork, FaUser } from "react-icons/fa6"
 function Page_Desenvolvimento() {
     return(
         <div>
-            {/* Cabeçalho da Página */}
             <div className={styles.container}>
                 <div className={styles.h1Container}>
                     <h1 style={{textAlign: 'center', fontSize: '35px', maxWidth: '800px', margin: '0 auto'}}>
@@ -25,7 +23,6 @@ function Page_Desenvolvimento() {
                 </div>
             </div>
 
-            {/* Seção 1: Por que este PC é ideal para a área? */}
             <div className={styles.cardsContainer}>
                 <Card titulo="Processamento Extremo" paragrafo="CPUs de última geração com múltiplos núcleos para reduzir o tempo de compilação e exportação." simbolo={LuCpu} />
                 <Card titulo="Gráficos Dedicados" paragrafo="Placas de vídeo poderosas para aceleração de hardware, edição 4K, modelagem 3D e IA." simbolo={FaPaintBrush} />
@@ -33,7 +30,6 @@ function Page_Desenvolvimento() {
                 <Card titulo="Armazenamento NVMe" paragrafo="Velocidade absurda de leitura e escrita para carregar bibliotecas, assets e projetos instantaneamente." simbolo={BsDeviceSsd}/>
             </div>
 
-            {/* Seção 2: Vantagens para Profissionais */}
             <div className={styles.container}>
                 <div className={styles.h1Container}>
                     <h1>Feito para o seu Workflow</h1>
@@ -45,7 +41,6 @@ function Page_Desenvolvimento() {
                 <Card titulo="Arquitetura Escalável" paragrafo="Gabinetes espaçosos e placas-mãe premium que permitem upgrades fáceis no futuro." simbolo={FaGears} />
             </div>
 
-            {/* Seção 3: Destaque da Recomendação (O PC em si) */}
             <div className={styles.mainCardCont}>
                 <div className={styles.h1Container}>
                     <h1>Recomendação Ideal: Workstation Creator Pro<br/>
@@ -60,7 +55,6 @@ function Page_Desenvolvimento() {
                 </div>
             </div>
 
-            {/* Seção 4: Dicas e Suporte */}
                                  <div className={styles.dicasAjuda}>
                          <div className={styles.h1Container}>
                              <h1>Dicas e Ajuda <p>Dicas, soluções e suporte para tornar sua experiência ainda melhor.</p></h1>
@@ -70,7 +64,6 @@ function Page_Desenvolvimento() {
                          <Ajuda simbolo={FaUser} link="Descubra >"/>
                      </div>
 
-            {/* Footer */}
             <footer>
                 <FCard titulo={`Garantia Premium`} descricao="Suporte ágil e substituição rápida de peças para que o seu trabalho não pare." />
                 <FCard titulo={`Monte do Seu Jeito`} descricao="Precisa de mais RAM ou armazenamento? Fale com nossos consultores." />
