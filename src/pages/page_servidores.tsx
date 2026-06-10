@@ -3,7 +3,6 @@ import Card from "../components/card"
 import FCard from "../components/footerCard"
 import Ajuda from "../components/cardAjuda"
 
-// Ícones focados em redes, infraestrutura, segurança e servidores
 import { FaServer, FaNetworkWired, FaDatabase, FaShieldAlt, FaMicrochip, FaHdd, FaTools } from "react-icons/fa"
 import { FaGears } from "react-icons/fa6"
 import { LuCpu } from "react-icons/lu"
@@ -14,7 +13,6 @@ import { FaUpwork, FaUser } from "react-icons/fa6"
 function Page_Servidores() {
     return(
         <div>
-            {/* Cabeçalho da Página */}
             <div className={styles.container}>
                 <div className={styles.h1Container}>
                     <h1 style={{textAlign: 'center', fontSize: '35px', maxWidth: '800px', margin: '0 auto'}}>
@@ -24,15 +22,13 @@ function Page_Servidores() {
                 </div>
             </div>
 
-            {/* Seção 1: Por que este PC/Servidor é ideal para a área? */}
             <div className={styles.cardsContainer}>
                 <Card titulo="Processamento Massivo" paragrafo="CPUs de linha Enterprise (Xeon/EPYC) com dezenas de núcleos para lidar com milhares de requisições simultâneas." simbolo={FaMicrochip} />
                 <Card titulo="Alta Disponibilidade" paragrafo="Fontes de alimentação redundantes e componentes de nível industrial para garantir Uptime de 99,9%." simbolo={FaServer} />
                 <Card titulo="Memória ECC" paragrafo="Memória RAM com correção automática de erros, evitando corrupção de dados em tarefas críticas." simbolo={FaDatabase} />
                 <Card titulo="Armazenamento RAID" paragrafo="Discos U.2 e Enterprise SSDs configurados em RAID para máxima segurança e velocidade de leitura." simbolo={FaHdd}/>
             </div>
-
-            {/* Seção 2: Vantagens para TI e Infraestrutura */}
+            
             <div className={styles.container}>
                 <div className={styles.h1Container}>
                     <h1>Preparado para a sua Infraestrutura</h1>
@@ -43,8 +39,7 @@ function Page_Servidores() {
                 <Card titulo="Pronto para Virtualização" paragrafo="Arquitetura validada para rodar VMware ESXi, Proxmox, Hyper-V e clusters Kubernetes." simbolo={FaGears} />
                 <Card titulo="Segurança Lógica e Física" paragrafo="Criptografia via hardware, módulos TPM e chassis em formato Rack ou Torre com chaves de acesso." simbolo={FaShieldAlt} />
             </div>
-
-            {/* Seção 3: Destaque da Recomendação (O Servidor em si) */}
+            
             <div className={styles.mainCardCont}>
                 <div className={styles.h1Container}>
                     <h1>Recomendação: Enterprise Server R1<br/>
@@ -59,8 +54,7 @@ function Page_Servidores() {
                 </div>
             </div>
 
-            {/* Seção 4: Dicas e Suporte */}
-                        <div className={styles.dicasAjuda}>
+            <div className={styles.dicasAjuda}>
                 <div className={styles.h1Container}>
                     <h1>Dicas e Ajuda <p>Dicas, soluções e suporte para tornar sua experiência ainda melhor.</p></h1>
                 </div>
@@ -69,7 +63,6 @@ function Page_Servidores() {
                 <Ajuda simbolo={FaUser} link="Descubra >"/>
             </div>
 
-            {/* Footer */}
             <footer>
                 <FCard titulo={`SLA Garantido`} descricao="Contratos de suporte com tempo de resposta crítico para a sua infraestrutura não parar." />
                 <FCard titulo={`Atendimento On-site`} descricao="Técnicos certificados disponíveis para substituição de peças diretamente no seu data center." />
