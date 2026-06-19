@@ -1,0 +1,13 @@
+.FooterCard {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.titulo {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px;
+}
